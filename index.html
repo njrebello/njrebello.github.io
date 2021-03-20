@@ -1,0 +1,565 @@
+﻿<!DOCTYPE HTML>
+<!--
+    Read Only by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Nathan Rebello</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/MIT.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/academicicons/css/academicons.min.css" />
+    <style>
+        .aligncenter {
+            text-align: center;
+        }
+
+        figure {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+
+            figure img {
+                vertical-align: top;
+            }
+
+            figure figcaption {
+                text-align: center;
+            }
+
+        .accordion {
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            padding: 25px;
+            width: 100%;
+            border: none;
+            text-align: center;
+            outline: none;
+            font-size: 20px;
+            transition: 0.4s;
+        }
+
+            .active, .accordion:hover {
+                background-color: #ccc;
+            }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: midnightblue;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+    <!-- Header -->
+    <section id="header">
+        <header>
+            <span class="image avatar"><img src="images/avatar.JPG" alt="" /></span>
+            <h1 id="logo"><a href="#">Nathan Rebello</a></h1>
+            nrebello@mit.edu<br />
+            <a href="CV.pdf">Curriculum Vitae</a> <br />
+            <a href="https://olsenlab.mit.edu/">Olsen Research Group</a>
+        </header>
+        <ul class="icons">
+            <li><a href="https://www.linkedin.com/in/nathanrebello" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/njrebello" class="icon brands fa-github"><span class="label">Github</span></a></li>
+        </ul>
+        <nav id="nav">
+            <ul>
+                <li><a href="#interests" class="active">Interests</a></li>
+                <li><a href="#projects">Research Projects</a></li>
+                <li><a href="#publications">Publications & Conferences</a></li>
+                <li><a href="#classes">Class Projects</a></li>
+                <li><a href="#collaborators">Collaborators</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- One -->
+            <section id="interests">
+                <div class="container">
+                    <header class="major">
+                        <h2>Welcome</h2>
+                    </header>
+                    <p>
+                        I am a third year Ph.D. student in <a href="https://cheme.mit.edu">MIT Chemical Engineering</a>
+                        advised by <a href="https://cheme.mit.edu/profile/bradley-d-olsen/">Bradley Olsen</a>.
+                    </p>
+
+                    <p>
+                        My research combines artificial intelligence and machine learning with materials science
+                        (<a href="https://www.eecs.mit.edu/news-events/announcements/exercises-amazement-discovering-deep-learning">MIT's 2019 6.S191 Award Winner</a>).
+                    </p>
+
+                    <p>
+                        My broad interests:
+                        <br />
+                    </p>
+
+                    <h4 style="text-align:center">
+                        polymer molecular design, machine learning, inverse design
+                    </h4>
+
+                    <p>
+                        <br />
+                        My Ph.D. focus is in:
+                    </p>
+
+                    <h4 style="text-align:center">
+                        creating theory and theory-guided AI tools, like stochastic subgraph search and machine learning models,
+                        to identify new trends in properties and accelerate the design of polymers
+                    </h4>
+                </div>
+            </section>
+
+            <!-- Two -->
+            <section id="projects">
+                <div class="container">
+                    <h3>Projects</h3>
+                    <button class="accordion">
+                        Predicting Soft Matter Phases using Machine Learning<br /><br />
+                        <i style="color:red;">Utility:</i> a machine learning model trained on
+                        block copolymer experiments outperforms physics-based models
+                    </button>
+                    <div class="panel">
+                        <p style="text-align:center;">
+                            Self-Consistent Mean-Field Theory (left) versus Experiments (right).
+                            <a href="https://www.researchgate.net/figure/Phase-diagram-of-linear-diblock-copolymers-A-b-B-as-a-function-of-c-N-and-volume_fig1_255249935">
+                                <img src="images/bcp.jpg" style='height: 100%; width: 100%; object-fit: contain' />
+                            </a>
+                        </p>
+                        <p>
+                            This work involves the construction of a state-of-the-art experimental phase database
+                            and applies machine learning models trained on this data to answer this question.
+                            This project addresses important issues in polymer informatics that currently make data-driven
+                            approaches challenging, like chemical diversity, volume, class imbalances, diffuse state
+                            in literature, and the fact that raw data and uncertainty are rarely published.
+                            Models will apply transfer learning, contrast fingerprints designed for small molecules
+                            with chemical representations that capture local and global interactions in polymers,
+                            and use architectures like the random forest and deep neural net.
+                        </p>
+                    </div>
+
+                    <button class="accordion">
+                        A New Query Language for Stochastic Polymer Structures<br /><br />
+                        <i style="color:red;">Utility:</i> used in all applications with digital representations
+                        of molecules including the world's largest databases like PubChem; goal is to accelerate data-driven research, 
+                        reaction design, and structure-to-property relationships in macromolecules
+                    </button>
+                    <div class="panel">
+                        <p>
+                            Data-driven research, reaction retrosynthesis, and small-molecule property design are rapidly advancing due to the availability
+                            of open source toolkits like RDKit that enable search of deterministic small molecule graphs encoded in
+                            <a href="https://www.daylight.com/dayhtml/doc/theory/theory.smiles.html">SMILES</a> (Simplified
+                            Molecular-Input Line-Entry System) using the subgraph search syntax <a href="https://www.daylight.com/dayhtml/doc/theory/theory.smarts.html">SMARTS</a>
+                            (SMILES Arbitrary Target Specification). <a href="https://pubs.acs.org/doi/10.1021/acscentsci.9b00476">BigSMILES</a>
+                            has extended SMILES to represent polymers as ensembles of molecular graphs, motivating a parallel extension of SMARTS to the
+                            macromolecular domain. This project focuses on the significant expansion and rich complexity of searching polymers through the new
+                            search syntax BigSMARTS. BigSMARTS queries the elements of a molecular graph set containing one or more elements of a subgraph
+                            set and includes searches within the polymer’s building blocks (repeat units and end groups). BigSMARTS enables polymer reactions
+                            to be encoded and searched and coarse-graining searches to classify chain topologies (star polymers and block copolymers) that
+                            influence properties. With the development of new search tools based on RDKit to support BigSMARTS, polymer informatics will
+                            enjoy the benefits of search that have advanced small molecule design in the era of artificial intelligence.
+                        </p>
+                        <p style="text-align:center;">
+                            <img src="images/BigSMARTS.JPG" style='height: 80%; width: 80%; object-fit: contain' />
+                        </p>
+                    </div>
+
+                    <button class="accordion">
+                        Material Design and Forward Property Prediction<br /><br />
+                        <i style="color:red;">Utility:</i>
+                        a theory-guided software for drawing stochastic molecules, predicting reactions,
+                        simulating  material formation, and predicting properties will reduce costs, time, 
+                        and resources on trial-and-error experiments
+                    </button>
+                    <div class="panel">
+                        <p>
+                            I am developing a software that allows a user to engineer complex polymer network structures (polydisperse, incomplete, off-stoichiometric)
+                            via the first ever molecular editor for stochastic graphs shown below and predict two important performance metrics:
+                            <ol>
+                                <li>Shear Elastic Modulus</li>
+                                <li>Fracture (Tearing Energy)</li>
+                            </ol>
+                        </p>
+                        <p style="text-align:center;">
+                            <img src="images/RIS.JPG" style='height: 80%; width: 80%; object-fit: contain' />
+                        </p>
+                        <p>
+                            This tool will apply over 140,000 small molecule templates from the US Patent Office to predict reactions of the user's monomers,
+                            run quantum calculations to coarse grain these monomers, simulate the formation of the network and its precise topology according
+                            to experimentally-validated theory, and leverage advanced approximations of published theories to predict the mechanical properties
+                            of the simulated material.
+                        </p>
+                    </div>
+                    <button class="accordion">
+                        Update to the famous Flory-Rehner Equation in Polymer Science<br /><br />
+                        <i style="color:red;">Utility:</i>
+                        first equation to predict the swelling of polymer networks with topological defects, confirmed with experimental validation
+                    </button>
+                    <div class="panel">
+
+                    </div>
+            </section>
+
+            <!-- Three -->
+            <section id="publications">
+                <div class="container">
+                    <h3>Publications & Conferences</h3>
+                    <button class="accordion">
+                        Publications<br />
+                        2017 - Present
+                    </button>
+                    <div class="panel">
+                        <p>
+                            PolyDAT: A Generic Data Schema for Polymer Characterization.
+                            <br>
+                            Tzyy-Shyang Lin, Nathan J. Rebello, Haley K. Beech, Zi Wang, Bassil El-Zaatari, David J. Lundberg, 
+                            Jeremiah A. Johnson, Julia A. Kalow, Stephen L. Craig, and Bradley D. Olsen                            
+                            <br /><i>Journal of Chemical Information and Modeling</i> 2021<br />
+                            (<a href="https://pubs.acs.org/doi/pdf/10.1021/acs.jcim.1c00028">PDF</a>)
+                            (<a href="https://pubs.acs.org/doi/10.1021/acs.jcim.1c00028">HTML</a>)
+                        </p>
+                        <p>
+                            Influence of Counterion Structure on Conductivity of Polymerized Ionic Liquids.
+                            <br>Jordan R. Keith, Nathan J. Rebello, Benjamin J. Cowen, and Venkat Ganesan
+                            <br /><i>ACS Macro Letters</i> 2019<br />
+                            (<a href="https://pubs.acs.org/doi/pdf/10.1021/acsmacrolett.9b00070">PDF</a>)
+                            (<a href="https://pubs.acs.org/doi/10.1021/acsmacrolett.9b00070">HTML</a>)
+                        </p>
+                        <p>
+                            Effect of Grafting Density of Random Copolymer Brushes on Perpendicular Alignment in PS-b-PMMA Thin Films.
+                            <br>Wooseop Lee, Sungmin Park, Yeongsik Kim, Vaidyanathan Sethuraman, Nathan Rebello,
+                            Venkat Ganesan, and Du Yeol Ryu
+                            <br /><i>Macromolecules</i> 2017<br />
+                            (<a href="https://pubs.acs.org/doi/pdf/10.1021/acs.macromol.7b00133">PDF</a>)
+                            (<a href="https://pubs.acs.org/doi/abs/10.1021/acs.macromol.7b00133">HTML</a>)
+                        </p>
+                        <p>
+                            Influence of topographically patterned angled guidelines on directed self-assembly of block copolymers.
+                            <br />
+                            Nathan Rebello, Vaidyanathan Sethuraman, Gregory Blachut, Christopher J. Ellison, C. Grant Willson, and Venkat Ganesan.
+                            <br />
+                            <i>Physical Review E </i> 2017 <br />
+                            (<a href="https://journals.aps.org/pre/pdf/10.1103/PhysRevE.96.052501">PDF</a>)
+                            (<a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.96.052501#fulltext">HTML</a>)
+                        </p>
+                    </div>
+
+                    <button class="accordion">
+                        Conferences and Presentations
+                        <br />
+                        2017 - Present
+                    </button>
+                    <div class="panel">
+                        <p style="text-align:justify">
+                            A Hierarchical Model for Polymer Data
+                            <br />
+                            Tzyy-Shyang Lin, Dylan J. Walsh, Nathan Rebello, Kenneth Kroenlein, Debra Audus, and Bradley Olsen
+                            <br />
+                            <i>APS March Meeting</i> 2021
+                            <br />
+                            (<a href="http://meetings.aps.org/Meeting/MAR21/Session/M71.57">Abstract</a>)
+                        </p>
+                        <p style="text-align:justify">
+                            BigSMARTS: A Structurally-Based Line Notation for Macromolecule Search, Classification, and Reactions
+                            <br />
+                            Nathan Rebello, Tzyy-Shyang Lin, and Bradley Olsen
+                            <br />
+                            <i>APS March Meeting</i> 2021
+                            <br />
+                            (<a href="http://meetings.aps.org/Meeting/MAR21/Session/M71.13">Abstract</a>)
+                        </p>
+                        <p style="text-align:justify">
+                            Updating classical swelling theory with loops: experiments and real elastic swelling theory
+                            <br />
+                            Haley Katherine Beech, Nathan Rebello, and Bradley Olsen
+                            <br />
+                            <i>APS March Meeting</i> 2021
+                            <br />
+                            (<a href="http://meetings.aps.org/Meeting/MAR21/Session/M71.54">Abstract</a>)
+                        </p>
+                        <p style="text-align:justify">
+                            Prediction of Block Copolymer Phase Behavior Using Machine Learning
+                            <br />
+                            Nathan Rebello, Akash Arora, Tzyy-Shyang Lin, Sarah Av-Ron, and Bradley Olsen
+                            <br />
+                            <i>APS March Meeting</i> 2021
+                            <br />
+                            (<a href="http://meetings.aps.org/Meeting/MAR21/Session/L63.6">Abstract</a>)
+                        </p>
+                        <p style="text-align:justify">
+                            Predicting the flow of polymers under melt processing: from reaction kinetics to viscoelasticity
+                            <br />
+                            Weizhong Zou, Amber Tupper, Nathan Rebello, Duminda S. Ranasinghe, William H. Green, Bradley Olsen, and Christopher Couch
+                            <br />
+                            <i>APS March Meeting</i> 2021
+                            <br />
+                            (<a href="http://meetings.aps.org/Meeting/MAR21/Session/F64.9">Abstract</a>)
+                        </p>
+                        <p>
+                            Introducing CRIPT and Demo
+                            <br />
+                            Dylan J. Walsh and Nathan J. Rebello
+                            <br />
+                            <i>Virtual Symposium on Polymer Data</i> 2021
+                            <br />
+                            (<a href="http://cript.mit.edu/">Link</a>)
+                        </p>
+                        <p style="text-align:justify">
+                            From quantum mechanics to viscoelasticity: A multiscale modeling and characterization of radical initiated modification of polyolefin in molten state
+                            <br />
+                            Weizhong Zou, Amber Tupper, Nathan Rebello, Wontae Joo, Duminda S. Ranasinghe, Tzyy-Shyang Lin, Gending Ji,
+                            Sarah Khanniche, Bradley Olsen, William H. Green, Krish Gopalan, and Christopher Couch
+                            <br />
+                            <i>APS March Meeting</i> 2020
+                            <br />
+                            (<a href="http://meetings.aps.org/Meeting/MAR20/Session/M71.128">Abstract</a>)
+                        </p>
+                        <p>
+                            Unveiling the effects of molecular topology on the viscoelasticity of entangled polymers under gelation.
+                            <br />
+                            Weizhong Zou, Alexandra A. Sourakov, Nathan Rebello, Tzyy-Shyang Lin, Bradley Olsen, and Jeremiah Johnson
+                            <br />
+                            <i>APS March Meeting</i> 2020
+                            <br />
+                            (<a href="https://meetings.aps.org/Meeting/MAR20/Session/B32.10">Abstract</a>)
+                        </p>
+                        <p>
+                            Perpendicular Orientation of PS-b-PMMA Microdomains Controlled by the Grafting Density of P(S-r-MMA) Brushes.
+                            <br />
+                            Wooseop Lee, S Park, Vaidyanathan Sethuraman, Nathan Rebello, Venkat Ganesan, and Du Yeol Ryu.
+                            <br />
+                            <i>APS March Meeting</i> 2020
+                            <br />
+                            (<a href="https://meetings.aps.org/Meeting/MAR18/Session/E52.3">Abstract</a>)
+                        </p>
+                        <p>
+                            Parametric Conditions for the Directed Self Assembly of Block Copolymers using a Topographically Patterned Angled Substrate and Grafted Brush
+                            <br />
+                            Nathan Rebello, Vaidyanathan Sethuraman, Gregory Blachut, Christopher J. Ellison, C. Grant Willson, and Venkat Ganesan.
+                            <br />
+                            <i>APS March Meeting</i> 2017
+                            <br />
+                            (<a href="https://meetings.aps.org/Meeting/MAR17/Session/B6.11">Abstract</a>)
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Four -->
+            <section id="classes">
+                <div class="container">
+                    <button class="accordion">
+                        Structured Models for Artificial Intelligence<br />
+                        MIT 6.882<br />
+                        <img src="images/SAR.jpg" style='height: 50%; width: 50%; object-fit: contain' />
+                    </button>
+                    <div class="panel">
+                        <p style="text-align:justify">
+                            I developed action-planning models to control autonomous intelligent agents in various “Search and Rescue” domains.
+                            A robot (partially) observes its environment, collects information and rewards, and learns the optimal path to the
+                            goal with actions to pick up people, deliver them to the hospital, and avoid obstacles like walls and fires.
+                            Approaches are evaluated by metrics including the success rate (% of time to reach the goal state), time to produce
+                            actions, and node expansions. Key techniques implemented include the famous A* with relaxation heuristics, PDDLs,
+                            belief states, planning and acting with partial observability via logical inference, constraint satisfaction
+                            problems, and POMDPs.
+                        </p>
+                    </div>
+                    <button class="accordion">
+                        Introduction to Machine Learning<br />
+                        MIT 6.036
+                    </button>
+                    <div class="panel">
+                        <p style="text-align:justify">
+                            I developed and trained simple machine learning models, including deep and recurrent neural networks, CNNs,
+                            Markov Decision processes, and reinforcement learning with agent-environment interaction. Key concepts
+                            include over-fitting, classification, recommender problems, and regularization.
+                        </p>
+                    </div>
+                    <button class="accordion">
+                        Advanced Scoliosis Detection with Deep Neural Nets<br />
+                        MIT 6.S191 <br />
+                        <img src="images/scoliosis.jpg" style='height: 50%; width: 50%; object-fit: contain' /> <br />
+                        <a href="images/2019_6S191_Projects.pdf"><u>My MIT Presentation</u></a> <br />
+                        <a href="https://youtu.be/9elXaKtHCiw?t=413"><u>YouTube</u></a>
+                    </button>
+                    <div class="panel">
+                        <p style="text-align:justify">
+                            Scoliosis is an abnormal lateral curvature of the spine that can start before the age of 15 and has prohibitive
+                            surgical and checkup costs. Inspired that the early detection of scoliosis can improve posture and lower these
+                            costs, I proposed an idea with a team that uses convolutional neural networks to analyze checkup X-ray images
+                            aggregated over time (initially with a slight curvature of the spine), detect features taken in early X-rays
+                            that are indicative that the condition will worsen, and classify the severity at time <i>t</i>. Though there are several
+                            implementation challenges of acquiring X-ray records for training, I presented this idea to sponsors from Nvidia
+                            and was awarded a $1,000 GPU for the practicality of the idea.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Five -->
+            <section id="collaborators">
+                <div class="container">
+                    <h3>Collaborators</h3>
+                    <div class="row" align="center">
+                        <div class="column" align="center">
+                            <figure>
+                                <img src="images/bdolsen.jpg" width="250" />
+                                <figcaption>
+                                    <a href="https://scholar.google.com/citations?user=S1nJ0CMAAAAJ&hl=en">Bradley Olsen</a>
+                                    <br />Ph.D. Advisor
+                                    <br />MIT
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/vganesan.jpg" width="150" />
+                                <figcaption>
+                                    <a href="https://che.utexas.edu/faculty-staff/faculty-directory/ganesan/">Venkat Ganesan</a>
+                                    <br />Undergraduate Advisor
+                                    <br />UT Austin
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <figure>
+                                <img src="images/tslin.jpg" width="160" />
+                                <figcaption>
+                                    <a href="https://scholar.google.com/citations?user=dpoRdgsAAAAJ&hl=en">Tzyy-Shyang Lin</a>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/arora.gif" width="160" />
+                                <figcaption>
+                                    <a href="https://scholar.google.com/citations?hl=en&user=Wa8UIpIAAAAJ">Akash Arora</a>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/hbeech.jpg" width="160" />
+                                <figcaption>
+                                    <a href="https://scholar.google.com/citations?user=dpg47qsAAAAJ&hl=en">Haley K. Beech</a>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/wzou.jpg" width="160" />
+                                <figcaption>
+                                    <a href="https://www.linkedin.com/in/weizhong-zou-463070ba/">Weizhong Zou</a>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/daudus.jpeg" width="125" />
+                                <figcaption>
+                                    <a href="https://www.nist.gov/people/debra-audus">Debra J. Audus</a>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/kjensen.jpg" width="195" />
+                                <figcaption>
+                                    <a href="https://jensenlab.mit.edu/">Klavs F. Jensen</a>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/barzilay.jpeg" width="140" />
+                                <figcaption>
+                                    <a href="https://www.regina.csail.mit.edu/">Regina Barzilay</a>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/tjaak.png" width="180" />
+                                <figcaption>
+                                    <a href="http://people.csail.mit.edu/tommi/">Tommi S. Jaakkola</a>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/wjin.jpg" width="160" />
+                                <figcaption>
+                                    <a href="http://people.csail.mit.edu/wengong/">Wengong Jin</a>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/cellison.jpeg" width="160" />
+                                <figcaption>
+                                    <a href="https://www.cems.umn.edu/people/faculty/christopher-ellison">Chris J. Ellison</a>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/gwillson.jpg" width="160" />
+                                <figcaption>
+                                    <a href="https://willson.cm.utexas.edu/Willson/">C. Grant Willson</a>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/dryu.gif" width="170" />
+                                <figcaption>
+                                    <a href="https://yonsei.pure.elsevier.com/en/persons/du-yeol-ryu">Du Yeol Ryu</a>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/jkeith.jpg" width="170" />
+                                <figcaption>
+                                    <a href="https://www.linkedin.com/in/jordan-keith-52371821/">Jordan R. Keith</a>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/vseth.jpg" width="170" />
+                                <figcaption>
+                                    <a href="https://www.linkedin.com/in/vaidyanathan-sethuraman-92222653/">Vaidyanathan Sethuraman</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer -->
+            <section id="footer">
+                <div class="container">
+                    <ul class="copyright">
+                        <li>&copy; Nathan J. Rebello. All rights reserved.</li>
+                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+</body>
+</html>
