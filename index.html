@@ -11,7 +11,7 @@
     <link rel="icon" href="images/MIT.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/academicicons/css/academicons.min.css" />
+    <link rel="stylesheet" href="assets/academicons/css/academicons.min.css" />
     <style>
         .aligncenter {
             text-align: center;
@@ -62,14 +62,16 @@
     <section id="header">
         <header>
             <span class="image avatar"><img src="images/avatar.JPG" alt="" /></span>
-            <h1 id="logo"><a href="#">Nathan Rebello</a></h1>
+            <h1 id="logo"><a href="#">Nathan J. Rebello</a></h1>
             nrebello@mit.edu<br />
             <a href="CV.pdf">Curriculum Vitae</a> <br />
             <a href="https://olsenlab.mit.edu/">Olsen Research Group</a>
         </header>
         <ul class="icons">
-            <li><a href="https://www.linkedin.com/in/nathanrebello" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            <li><a href="https://github.com/njrebello" class="icon brands fa-github"><span class="label">Github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/nathanrebello" class="icon brands fa-linkedin fa-2x"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/njrebello" class="icon brands fa-github fa-2x"><span class="label">Github</span></a></li>
+            <li><a href="https://scholar.google.com/citations?user=4A-Ks9gAAAAJ&hl=en" class="ai ai-google-scholar ai-3x"></a></li>
+            <li><a href="https://orcid.org/0000-0002-0178-7701" class="ai ai-orcid ai-3x"></a></li>
         </ul>
         <nav id="nav">
             <ul>
@@ -77,7 +79,7 @@
                 <li><a href="#projects">Research Projects</a></li>
                 <li><a href="#publications">Publications & Conferences</a></li>
                 <li><a href="#classes">Class Projects</a></li>
-                <li><a href="#collaborators">Collaborators</a></li>
+                <li><a href="#collaborators">Mentors & Collaborators</a></li>
             </ul>
         </nav>
     </section>
@@ -95,32 +97,43 @@
                         <h2>Welcome</h2>
                     </header>
                     <p>
-                        I am a third year Ph.D. student in <a href="https://cheme.mit.edu">MIT Chemical Engineering</a>
-                        advised by <a href="https://cheme.mit.edu/profile/bradley-d-olsen/">Bradley Olsen</a>.
+                        I am a 4th year Ph.D. student in <a href="https://cheme.mit.edu">MIT Chemical Engineering</a>
+                        advised by <a href="https://cheme.mit.edu/profile/bradley-d-olsen/">Bradley D. Olsen</a>.
                     </p>
 
                     <p>
                         My research combines artificial intelligence and machine learning with materials science
-                        (<a href="https://www.eecs.mit.edu/news-events/announcements/exercises-amazement-discovering-deep-learning">MIT's 2019 6.S191 Award Winner</a>).
+                        (<a href="https://news.mit.edu/2019/discovering-deep-learning-mit-iap-course-0315">MIT's 2019 6.S191 Award Winner</a>).
                     </p>
 
                     <p>
                         My broad interests:
-                        <br />
                     </p>
 
                     <h4 style="text-align:center">
-                        polymer molecular design, machine learning, inverse design
+                        search algorithms
+                    </h4>
+
+                    <h4 style="text-align:center">
+                        polymer property prediction
+                    </h4>
+
+                    <h4 style="text-align:center">
+                        polymer data models
                     </h4>
 
                     <p>
-                        <br />
+                        Visit <a href="http://criptapp.herokuapp.com/">CRIPT</a>, a company that I co-founded 
+                        that uses a data-centric infrastructure for findable, accessible, interoperable, and reusable (FAIR) data for
+                        a wide variety of stakeholders, including polymer scientists/engineers and data scientists in academia, industry, and government. 
+                    </p>
+
+                    <p>
                         My Ph.D. focus is on:
                     </p>
 
                     <h4 style="text-align:center">
-                        creating theory and theory-guided AI tools, like stochastic subgraph search and machine learning models,
-                        to identify new trends in properties and accelerate the design of polymers
+                        creating theory-guided AI tools to accelerate polymer design
                     </h4>
                 </div>
             </section>
@@ -128,39 +141,13 @@
             <!-- Two -->
             <section id="projects">
                 <div class="container">
-                    <h3>Projects</h3>
-                    <button class="accordion text-left">
-                        Predicting Soft Matter Phases using Machine Learning<br /><br />
-                        <i style="color:red;">Utility:</i> a machine learning model trained on
-                        block copolymer experiments outperforms physics-based models
-                    </button>
-                    <div class="panel">
-                        <p style="text-align:center;">
-                            Self-Consistent Mean-Field Theory (left) versus Experiments (right).
-                            <a href="https://www.researchgate.net/figure/Phase-diagram-of-linear-diblock-copolymers-A-b-B-as-a-function-of-c-N-and-volume_fig1_255249935">
-                                <img src="images/bcp.jpg" style='height: 100%; width: 100%; object-fit: contain' />
-                            </a>
-                        </p>
-                        <p>
-                            This work involves the construction of a state-of-the-art experimental phase database
-                            and applies machine learning models trained on this data to answer this question.
-                            This project addresses important issues in polymer informatics that make data driven
-                            approaches in materials science challenging: chemical diversity, volume, class imbalance, diffuse state
-                            in literature, and the fact that raw data and experimental uncertainty are rarely published.
-                            Models apply transfer learning from small molecules to address the lack of data, contrast fingerprints designed for small molecules
-                            with chemical representations that capture local and global interactions in polymers,
-                            and use architectures like the random forest and deep neural network.
-                        </p>
-                    </div>
-
+                    <h3>Research Projects</h3>
                     <button class="accordion">
-                        A New Query Language for Stochastic Polymer Structures<br /><br />
-                        <i style="color:red;">Utility:</i> all applications with digital representations
-                        of molecules including the world's largest databases like PubChem, accelerating data-driven research, 
-                        molecular design, and structure-to-property relationships in macromolecules
+                        A Substructure Search Tool for Macromolecule Data Discovery <br /><br />
+                        <i style="color:red;">Utility:</i> Similar substructures = similar properties
                     </button>
                     <div class="panel">
-                        <p>
+                        <p style="text-align:left;">
                             Data-driven research, reaction design, and small-molecule property design are rapidly advancing due to the availability
                             of open source toolkits like RDKit that enable search of deterministic small molecule graphs encoded in
                             <a href="https://www.daylight.com/dayhtml/doc/theory/theory.smiles.html">SMILES</a> (Simplified
@@ -180,14 +167,13 @@
                     </div>
 
                     <button class="accordion">
-                        Material Design and Property Prediction<br /><br />
+                        From Materials Design to Property Prediction...<br /><br />
                         <i style="color:red;">Utility:</i>
-                        a theory-guided software for drawing stochastic molecules, predicting reactions,
-                        simulating  material formation, and predicting properties will reduce costs, time, 
+                        a theory-guided platform to simulate network-forming reactions and predict properties, reducing time 
                         and resources on trial-and-error experiments
                     </button>
                     <div class="panel">
-                        <p>
+                        <p style="text-align:left;">
                             I am developing a software that allows a user to engineer complex polydisperse polymer network structures below full conversion
                             via the first ever molecular editor for stochastic graphs shown below and predict two important performance metrics:
                             <ol>
@@ -198,24 +184,44 @@
                         <p style="text-align:center;">
                             <img src="images/RIS.JPG" style='height: 80%; width: 80%; object-fit: contain' />
                         </p>
-                        <p>
+                        <p style="text-align:left;">
                             This tool will apply over 140,000 small molecule templates from the US Patent Office to predict reactions of the user's monomers,
                             run quantum calculations to coarse grain these monomers, simulate the formation of the network and its precise defective topology according
                             to experimentally-validated theory, and leverage advanced approximations of published theories to predict the mechanical properties
                             of the simulated material.
                         </p>
                     </div>
-                    <button class="accordion">
-                        Update to the Famous Flory-Rehner Equation in Polymer Science<br /><br />
-                        <i style="color:red;">Utility:</i>
-                        first equation to predict the swelling of polymer networks with topological defects, confirmed with experimental validation
+
+                    <button class="accordion text-left">
+                        Using Machine Learning to Predict Soft Matter Phases<br /><br />
+                        <i style="color:red;">Utility:</i> machine learning models trained on
+                        experimental data outperform start-of-the-art physics
                     </button>
                     <div class="panel">
                         <p style="text-align:center;">
-                            <img src="images/Swelling.JPG" style='height: 60%; width: 60%; object-fit: contain' />
+                            <a href="https://pubs.acs.org/doi/10.1021/acsmacrolett.1c00521?fig=tgr1&ref=pdf">
+                                <img src="images/Random Forest.jpeg" style='height: 100%; width: 100%; object-fit: contain' />
+                            </a>
                         </p>
-                        <p>
-                            The <i>x</i> axis is the dimensionless concentration, and the <i>y</i> axis is a function of the Flory-Huggins interaction parameter.
+                        <p style="text-align:left;">
+                            This work involves the construction of a state-of-the-art experimental phase database
+                            and applies machine learning models trained on this data to answer this question.
+                            This project addresses important issues in polymer informatics that make data driven
+                            approaches in materials science challenging: chemical diversity, volume, class imbalance, diffuse state
+                            in literature, and the fact that raw data and experimental uncertainty are rarely published.
+                        </p>
+                    </div>
+
+                    <button class="accordion">
+                        Modifying the Famous Flory-Rehner Equation in Polymer Science<br /><br />
+                        <i style="color:red;">Utility:</i>
+                        quantitatively predicts how defect density impacts polymer network swelling, validated with experiments
+                    </button>
+                    <div class="panel">
+                        <p style="text-align:center;">
+                            <img src="images/Swelling.jpeg" style='height: 80%; width: 80%; object-fit: contain' />
+                        </p>
+                        <p style="text-align:left;">
                             The new equations (Real Elastic Swelling Theory or REST) get closest to the experimental model in red, demonstrating the
                             incorporating precise gel topology into the swelling model improves the accuracy over the most famous swelling equation in polymer science
                             developed by Bray and Merrill (Flory and Rehner)
@@ -233,6 +239,14 @@
                         2017 - Present
                     </button>
                     <div class="panel">
+                        <p>
+                            Random Forest Predictor for Diblock Copolymer Phase Behavior
+                            <br>
+                            Akash Arora, Tzyy-Shyang Lin, Nathan J. Rebello, Sarah H. M. Av-Ron, Hidenobu Mochigase, and Bradley D. Olsen
+                            <br /><i>ACS Macro Letters</i> 2021<br />
+                            (<a href="https://pubs.acs.org/doi/pdf/10.1021/acsmacrolett.1c00521">PDF</a>)
+                            (<a href="https://pubs.acs.org/doi/abs/10.1021/acsmacrolett.1c00521">HTML</a>)
+                        </p>
                         <p>
                             Adding the Effect of Topological Defects to the Flory−Rehner and Bray−Merrill Swelling Theories
                             <br>
@@ -291,16 +305,52 @@
                         2017 - Present
                     </button>
                     <div class="panel">
-                        <p style="text-align:justify">
+                        <p>
+                            A Multiscale Pipeline for Polymer Network Design and Mechanical Property Prediction with Reaction Detection
+                            <br />
+                            Nathan Rebello, Tzyy-Shyang Lin, and Bradley Olsen
+                            <br />
+                            <i>AIChE National Meeting</i> 2021
+                            <br />
+                            (<a href="https://aiche.confex.com/aiche/2021/meetingapp.cgi/Paper/623196">Abstract</a>)
+                        </p>
+                        <p>
+                            Multiscale Modeling and Characterization of Radical-Initiated Modification of Molten Polyolefins
+                            <br />
+                            Weizhong Zou, Amber Tupper, Nathan Rebello, Duminda Ranasinghe, William Green, Bradley Olsen, and Christopher Couch
+                            <br />
+                            <i>AIChE National Meeting</i> 2021
+                            <br />
+                            (<a href="https://aiche.confex.com/aiche/2021/meetingapp.cgi/Paper/627766">Abstract</a>)
+                        </p>
+                        <p>
+                            A Stochastic Chemical Search Grammar for Macromolecules
+                            <br />
+                            Nathan Rebello, Tzyy-Shyang Lin, and Bradley Olsen
+                            <br />
+                            <i>AIChE National Meeting</i> 2021
+                            <br />
+                            (<a href="https://aiche.confex.com/aiche/2021/meetingapp.cgi/Paper/623200">Abstract</a>)
+                        </p>
+                        <p>
+                            Updating Classical Polymer Network Swelling Theory with Loop Defects
+                            <br />
+                            Haley Beech, Nathan Rebello, and Bradley Olsen
+                            <br />
+                            <i>AIChE National Meeting</i> 2021
+                            <br />
+                            (<a href="https://aiche.confex.com/aiche/2021/meetingapp.cgi/Paper/625889">Abstract</a>)
+                        </p>
+                        <p>
                             A Hierarchical Model for Polymer Data
                             <br />
-                            Tzyy-Shyang Lin, Dylan J. Walsh, Nathan Rebello, Kenneth Kroenlein, Debra Audus, and Bradley Olsen
+                            Tzyy-Shyang Lin, Dylan Walsh, Nathan Rebello, Kenneth Kroenlein, Debra Audus, and Bradley Olsen
                             <br />
                             <i>APS March Meeting</i> 2021
                             <br />
                             (<a href="http://meetings.aps.org/Meeting/MAR21/Session/M71.57">Abstract</a>)
                         </p>
-                        <p style="text-align:justify">
+                        <p>
                             BigSMARTS: A Structurally-Based Line Notation for Macromolecule Search, Classification, and Reactions
                             <br />
                             Nathan Rebello, Tzyy-Shyang Lin, and Bradley Olsen
@@ -309,16 +359,16 @@
                             <br />
                             (<a href="http://meetings.aps.org/Meeting/MAR21/Session/M71.13">Abstract</a>)
                         </p>
-                        <p style="text-align:justify">
+                        <p>
                             Updating classical swelling theory with loops: experiments and real elastic swelling theory
                             <br />
-                            Haley Katherine Beech, Nathan Rebello, and Bradley Olsen
+                            Haley Beech, Nathan Rebello, and Bradley Olsen
                             <br />
                             <i>APS March Meeting</i> 2021
                             <br />
                             (<a href="http://meetings.aps.org/Meeting/MAR21/Session/M71.54">Abstract</a>)
                         </p>
-                        <p style="text-align:justify">
+                        <p>
                             Prediction of Block Copolymer Phase Behavior Using Machine Learning
                             <br />
                             Nathan Rebello, Akash Arora, Tzyy-Shyang Lin, Sarah Av-Ron, and Bradley Olsen
@@ -327,10 +377,10 @@
                             <br />
                             (<a href="http://meetings.aps.org/Meeting/MAR21/Session/L63.6">Abstract</a>)
                         </p>
-                        <p style="text-align:justify">
+                        <p>
                             Predicting the flow of polymers under melt processing: from reaction kinetics to viscoelasticity
                             <br />
-                            Weizhong Zou, Amber Tupper, Nathan Rebello, Duminda S. Ranasinghe, William H. Green, Bradley Olsen, and Christopher Couch
+                            Weizhong Zou, Amber Tupper, Nathan Rebello, Duminda Ranasinghe, William Green, Bradley Olsen, and Christopher Couch
                             <br />
                             <i>APS March Meeting</i> 2021
                             <br />
@@ -339,13 +389,13 @@
                         <p>
                             Introducing CRIPT and Demo
                             <br />
-                            Dylan J. Walsh and Nathan J. Rebello
+                            Dylan Walsh and Nathan Rebello
                             <br />
                             <i>Virtual Symposium on Polymer Data</i> 2021
                             <br />
                             (<a href="http://cript.mit.edu/">Link</a>)
                         </p>
-                        <p style="text-align:justify">
+                        <p>
                             From quantum mechanics to viscoelasticity: A multiscale modeling and characterization of radical initiated modification of polyolefin in molten state
                             <br />
                             Weizhong Zou, Amber Tupper, Nathan Rebello, Wontae Joo, Duminda S. Ranasinghe, Tzyy-Shyang Lin, Gending Ji,
@@ -358,7 +408,7 @@
                         <p>
                             Unveiling the effects of molecular topology on the viscoelasticity of entangled polymers under gelation.
                             <br />
-                            Weizhong Zou, Alexandra A. Sourakov, Nathan Rebello, Tzyy-Shyang Lin, Bradley Olsen, and Jeremiah Johnson
+                            Weizhong Zou, Alexandra Sourakov, Nathan Rebello, Tzyy-Shyang Lin, Bradley Olsen, and Jeremiah Johnson
                             <br />
                             <i>APS March Meeting</i> 2020
                             <br />
@@ -367,7 +417,7 @@
                         <p>
                             Perpendicular Orientation of PS-b-PMMA Microdomains Controlled by the Grafting Density of P(S-r-MMA) Brushes.
                             <br />
-                            Wooseop Lee, S Park, Vaidyanathan Sethuraman, Nathan Rebello, Venkat Ganesan, and Du Yeol Ryu.
+                            Wooseop Lee, Sungmin Park, Vaidyanathan Sethuraman, Nathan Rebello, Venkat Ganesan, and Du Yeol Ryu
                             <br />
                             <i>APS March Meeting</i> 2020
                             <br />
@@ -376,7 +426,7 @@
                         <p>
                             Parametric Conditions for the Directed Self Assembly of Block Copolymers using a Topographically Patterned Angled Substrate and Grafted Brush
                             <br />
-                            Nathan Rebello, Vaidyanathan Sethuraman, Gregory Blachut, Christopher J. Ellison, C. Grant Willson, and Venkat Ganesan.
+                            Nathan Rebello, Vaidyanathan Sethuraman, Gregory Blachut, Christopher J. Ellison, C. Grant Willson, and Venkat Ganesan
                             <br />
                             <i>APS March Meeting</i> 2017
                             <br />
@@ -389,12 +439,26 @@
             <!-- Four -->
             <section id="classes">
                 <div class="container">
+                    <h3>Class Projects</h3>
+                    <button class="accordion">
+                        Machine Learning for Healthcare<br />
+                        MIT 6.871[J]
+                        </button>
+                    <div class="panel">
+                        <p style="text-align:justify">
+                            Developed random forest model trained on radiology report text from the MIMIC-IV and MIMIC-CXR 
+                            datasets to predict the hospital readmissions within 30 days due to congestive heart failure, with AUC
+                            scores reaching as high as 0.70, which is comparable to published models in the field.
+                        </p>
+                    </div>
                     <button class="accordion">
                         Structured Models for Artificial Intelligence<br />
-                        MIT 6.882<br />
-                        <img src="images/SAR.jpg" style='height: 50%; width: 50%; object-fit: contain' />
+                        MIT 6.882
                     </button>
                     <div class="panel">
+                        <p style="text-align:center;">
+                            <img src="images/SAR.jpg" style='height: 50%; width: 50%; object-fit: contain' />
+                        </p>
                         <p style="text-align:justify">
                             I developed action-planning models to control autonomous intelligent agents in various “Search and Rescue” domains.
                             A robot (partially) observes its environment, collects information and rewards, and learns the optimal path to the
@@ -441,19 +505,19 @@
             <!-- Five -->
             <section id="collaborators">
                 <div class="container">
-                    <h3>Collaborators</h3>
+                    <h3>Mentors & Collaborators</h3>
                     <div class="row" align="center">
                         <div class="column" align="center">
                             <figure>
-                                <img src="images/bdolsen.jpg" width="250" />
+                                <img src="images/bdolsen.jpg" width="340" />
                                 <figcaption>
-                                    <a href="https://scholar.google.com/citations?user=S1nJ0CMAAAAJ&hl=en">Bradley Olsen</a>
+                                    <a href="https://scholar.google.com/citations?user=S1nJ0CMAAAAJ&hl=en">Bradley D. Olsen</a>
                                     <br />Ph.D. Advisor
                                     <br />MIT
                                 </figcaption>
                             </figure>
                             <figure>
-                                <img src="images/vganesan.jpg" width="150" />
+                                <img src="images/vganesan.jpg" width="194" />
                                 <figcaption>
                                     <a href="https://che.utexas.edu/faculty-staff/faculty-directory/ganesan/">Venkat Ganesan</a>
                                     <br />Undergrad Advisor
