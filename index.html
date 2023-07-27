@@ -106,33 +106,21 @@
                     </p>
 
                     <p>
-                        My broad interests:
-                    </p>
-
-                    <h4 style="text-align:center">
-                        search algorithms
-                    </h4>
-
-                    <h4 style="text-align:center">
-                        polymer property prediction
-                    </h4>
-
-                    <h4 style="text-align:center">
-                        polymer data models
-                    </h4>
-
-                    <p>
-                        Visit <a href="http://criptapp.herokuapp.com/">CRIPT</a>, a company that I co-founded 
+                        Visit <a href="http://criptapp.herokuapp.com/">CRIPT</a>, a company that I co-founded
                         that uses a data-centric infrastructure for findable, accessible, interoperable, and reusable (FAIR) data for
-                        a wide variety of stakeholders, including polymer scientists/engineers and data scientists in academia, industry, and government. 
+                        a wide variety of stakeholders, including polymer scientists/engineers and data scientists in academia, industry, and government.
                     </p>
 
                     <p>
-                        My Ph.D. focus is on:
+                        My Ph.D. has two aims:
                     </p>
 
                     <h4 style="text-align:center">
-                        creating theory-guided AI tools to accelerate polymer design
+                        How does network chemistry and topology influence mechanical properties? (Aim I)
+                    </h4>
+
+                    <h4 style="text-align:center">
+                        How do we rapidly search chemistries and topologies to support polymer network informatics? (Aim II)
                     </h4>
                 </div>
             </section>
@@ -141,8 +129,54 @@
             <section id="projects">
                 <div class="container">
                     <h3>Research Projects</h3>
+                    <h4 style="text-align:center">
+                        Aim I
+                    </h4>
                     <button class="accordion">
-                        A Substructure Search Tool for Macromolecule Data Discovery <br /><br />
+                        REST: A Theory to Predict the Swelling of a Network with Topological Defects<br /><br />
+                        <i style="color:red;">Utility:</i>
+                        quantitatively predicts how defect density impacts polymer network swelling, validated with experiments
+                    </button>
+                    <div class="panel">
+                        <p style="text-align:center;">
+                            <img src="images/Swelling.jpeg" style='height: 80%; width: 80%; object-fit: contain' />
+                        </p>
+                        <p style="text-align:left;">
+                            Please check out my paper at <a href="https://pubs.acs.org/doi/pdf/10.1021/acsmacrolett.0c00909">this link</a>!
+                        </p>
+                    </div>
+
+                    <button class="accordion">
+                        NERD: A Multiscale Tool to Design Polymer Networks <br /><br />
+                        <i style="color:red;">Utility:</i>
+                        a theory-guided platform to simulate network-forming reactions and predict properties, reducing time
+                        and resources on trial-and-error experiments
+                    </button>
+                    <div class="panel">
+                        <p style="text-align:left;">
+                            I am developing a software that allows a user to engineer complex polydisperse polymer network structures below full conversion
+                            via the first ever molecular editor for stochastic graphs shown below and predict two important performance metrics:
+                            <ol>
+                                <li>Shear Elastic Modulus</li>
+                                <li>Fracture (Tearing Energy)</li>
+                            </ol>
+                        </p>
+                        <p style="text-align:center;">
+                            <img src="images/RIS.JPG" style='height: 80%; width: 80%; object-fit: contain' />
+                        </p>
+                        <p style="text-align:left;">
+                            This tool will apply over 140,000 small molecule templates from the US Patent Office to predict reactions of the user's monomers,
+                            run quantum calculations to coarse grain these monomers, simulate the formation of the network and its precise defective topology according
+                            to experimentally-validated theory, and leverage advanced approximations of published theories to predict the mechanical properties
+                            of the simulated material.
+                        </p>
+                    </div>
+
+                    <h4 style="text-align:center">
+                        Aim II
+                    </h4>
+                    <button class="accordion">
+                        BigSMARTS Query Language and Substructure Search  <br /><br />
                         <i style="color:red;">Utility:</i> Similar substructures = similar properties
                     </button>
                     <div class="panel">
@@ -166,55 +200,50 @@
                     </div>
 
                     <button class="accordion">
-                        From Materials Design to Property Prediction...<br /><br />
-                        <i style="color:red;">Utility:</i>
-                        a theory-guided platform to simulate network-forming reactions and predict properties, reducing time 
-                        and resources on trial-and-error experiments
+                        String-Based Search: A Unique Identifier for BigSMILES using State Machines  <br /><br />
+                        <i style="color:red;">Utility:</i> Searching ensembles by string is faster than graph traversal!
                     </button>
                     <div class="panel">
                         <p style="text-align:left;">
-                            I am developing a software that allows a user to engineer complex polydisperse polymer network structures below full conversion
-                            via the first ever molecular editor for stochastic graphs shown below and predict two important performance metrics:
-                            <ol>
-                                <li>Shear Elastic Modulus</li>
-                                <li>Fracture (Tearing Energy)</li>
-                            </ol>
+                            A small molecule has a single deterministic molecular graph representation, 
+                            but it can have many valid SMILES string representations, which makes useful 
+                            tasks like searching SMILES computationally expensive. 
+                            Many theories and algorithms have been proposed to canonicalize the SMILES language,
+                            or determine a unique SMILES identifier for every molecule. These algorithms have been implemented in toolkits like RDKit.
+                            This aim introduces a canonicalization procedure for the BigSMILES language by mapping a BigSMILES string into a state machine graph, 
+                            using existing algorithms in computer science literature to minimize or canonicalize the graph, and converting the graph back into a string.
                         </p>
                         <p style="text-align:center;">
-                            <img src="images/RIS.JPG" style='height: 80%; width: 80%; object-fit: contain' />
-                        </p>
-                        <p style="text-align:left;">
-                            This tool will apply over 140,000 small molecule templates from the US Patent Office to predict reactions of the user's monomers,
-                            run quantum calculations to coarse grain these monomers, simulate the formation of the network and its precise defective topology according
-                            to experimentally-validated theory, and leverage advanced approximations of published theories to predict the mechanical properties
-                            of the simulated material.
+                            <img src="images/BigSMARTS.JPG" style='height: 80%; width: 80%; object-fit: contain' />
                         </p>
                     </div>
-
-                    <button class="accordion">
-                        Modifying the Famous Flory-Rehner Equation in Polymer Science<br /><br />
-                        <i style="color:red;">Utility:</i>
-                        quantitatively predicts how defect density impacts polymer network swelling, validated with experiments
-                    </button>
-                    <div class="panel">
-                        <p style="text-align:center;">
-                            <img src="images/Swelling.jpeg" style='height: 80%; width: 80%; object-fit: contain' />
-                        </p>
-                        <p style="text-align:left;">
-                            Please check out my paper at <a href="https://pubs.acs.org/doi/pdf/10.1021/acsmacrolett.0c00909">this link</a>!
-                        </p>
-                    </div>
-            </section>
+</section>
 
             <!-- Three -->
             <section id="publications">
                 <div class="container">
-                    <h3>Publications & Conferences</h3>
+                    <h3>Publications</h3>
                     <button class="accordion">
                         Publications<br />
                         2017 - Present
                     </button>
                     <div class="panel">
+                        <p>
+                            Canonicalizing BigSMILES for Polymers with Defined Backbones
+                            <br>
+                            Tzyy-Shyang Lin, Nathan J Rebello, Guang-He Lee, Melody A Morris, Bradley D Olsen
+                            <br /><i>ACS Polymers Au</i> 2022<br />
+                            (<a href="https://pubs.acs.org/doi/epdf/10.1021/acspolymersau.2c00009">PDF</a>)
+                            (<a href="https://pubs.acs.org/doi/full/10.1021/acspolymersau.2c00009">HTML</a>)
+                        </p>
+                        <p>
+                            Simulate time-integrated coarse-grained molecular dynamics with geometric machine learning
+                            <br>
+                            Xiang Fu, Tian Xie, Nathan J Rebello, Bradley D Olsen, Tommi Jaakkola
+                            <br /><i>arXiv preprint</i> 2022<br />
+                            (<a href="https://arxiv.org/pdf/2204.10348.pdf">PDF</a>)
+                            (<a href="https://arxiv.org/abs/2204.10348">HTML</a>)
+                        </p>
                         <p>
                             Random Forest Predictor for Diblock Copolymer Phase Behavior
                             <br>
@@ -263,15 +292,6 @@
                             <br /><i>Macromolecules</i> 2017<br />
                             (<a href="https://pubs.acs.org/doi/pdf/10.1021/acs.macromol.7b00133">PDF</a>)
                             (<a href="https://pubs.acs.org/doi/abs/10.1021/acs.macromol.7b00133">HTML</a>)
-                        </p>
-                        <p>
-                            Influence of topographically patterned angled guidelines on directed self-assembly of block copolymers.
-                            <br />
-                            Nathan Rebello, Vaidyanathan Sethuraman, Gregory Blachut, Christopher J. Ellison, C. Grant Willson, and Venkat Ganesan
-                            <br />
-                            <i>Physical Review E </i> 2017 <br />
-                            (<a href="https://journals.aps.org/pre/pdf/10.1103/PhysRevE.96.052501">PDF</a>)
-                            (<a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.96.052501#fulltext">HTML</a>)
                         </p>
                     </div>
 
