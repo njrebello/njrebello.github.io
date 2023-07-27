@@ -112,15 +112,11 @@
                     </p>
 
                     <p>
-                        My Ph.D. has two aims:
+                        My dissertation is titled:
                     </p>
 
                     <h4 style="text-align:center">
-                        How does network chemistry and topology influence mechanical properties? (Aim I)
-                    </h4>
-
-                    <h4 style="text-align:center">
-                        How do we rapidly search chemistries and topologies to support polymer network informatics? (Aim II)
+                        <i>Predicting Properties of Polymer Networks Using Analytical Theory and Data-Driven Approaches</i>                    
                     </h4>
                 </div>
             </section>
@@ -129,8 +125,8 @@
             <section id="projects">
                 <div class="container">
                     <h3>Research Projects</h3>
-                    <h4 style="text-align:center">
-                        Aim I
+                    <h4 style="text-align:left">
+                        How does network chemistry and topology influence mechanical properties? (Aim I)
                     </h4>
                     <button class="accordion">
                         REST: A Theory to Predict the Swelling of a Network with Topological Defects<br /><br />
@@ -142,7 +138,20 @@
                             <img src="images/Swelling.jpeg" style='height: 80%; width: 80%; object-fit: contain' />
                         </p>
                         <p style="text-align:left;">
-                            Please check out my paper at <a href="https://pubs.acs.org/doi/pdf/10.1021/acsmacrolett.0c00909">this link</a>!
+                            This thesis introduces an update to the elastic portion of the Flory-Rehner 
+                            and Bray-Merrill theories to incorporate loop defects.
+                            To validate this theory, swelling experiments, for the first time, 
+                            are performed on poly(ethylene oxide) gels in which the topological 
+                            defects have been previously measured. As a summary of the results, 
+                            the swelling ratio and loop density are positively correlated, and 
+                            the revised models with the exact loop density are more accurate 
+                            than the Bray-Merrill equation. 
+                            The goal of this aim is to improve our theoretical understanding 
+                            of how cyclic defects influence swelling and should broadly 
+                            advance the design of materials with targeted swelling capacity 
+                            while accounting for precise topological inhomogeneities.
+                            Please check out my paper at 
+                            <a href="https://pubs.acs.org/doi/pdf/10.1021/acsmacrolett.0c00909">this link</a>!
                         </p>
                     </div>
 
@@ -153,49 +162,34 @@
                         and resources on trial-and-error experiments
                     </button>
                     <div class="panel">
-                        <p style="text-align:left;">
-                            I am developing a software that allows a user to engineer complex polydisperse polymer network structures below full conversion
-                            via the first ever molecular editor for stochastic graphs shown below and predict two important performance metrics:
-                            <ol>
-                                <li>Shear Elastic Modulus</li>
-                                <li>Fracture (Tearing Energy)</li>
-                            </ol>
-                        </p>
                         <p style="text-align:center;">
-                            <img src="images/RIS.JPG" style='height: 80%; width: 80%; object-fit: contain' />
+                            <img src="images/NERD.PNG" style='height: 80%; width: 80%; object-fit: contain' />
                         </p>
                         <p style="text-align:left;">
-                            This tool will apply over 140,000 small molecule templates from the US Patent Office to predict reactions of the user's monomers,
-                            run quantum calculations to coarse grain these monomers, simulate the formation of the network and its precise defective topology according
-                            to experimentally-validated theory, and leverage advanced approximations of published theories to predict the mechanical properties
-                            of the simulated material.
+                            There are very few tools that directly link a polymer network chemistry like a poly(ethylene glycol) or poly(dimethyl siloxane) network to its coarse graining parameters, predicted topology, and macroscopic properties. To fill in this gap, this aim introduces the Network Elasticity and Reaction Designer (NERD), an open-source software that enables the design and prediction of mechanical properties of polymer networks, from drawing deterministic (small molecule) and stochastic (polymer) reactants on an editor to obtaining approximations of the mechanical properties of the network. This tool consists of several modules and uses both data-driven approaches and physics-based theories to predict the mechanical properties of the material. The two properties predicted are the shear modulus and the tearing energy.
                         </p>
                     </div>
 
-                    <h4 style="text-align:center">
-                        Aim II
+                    <h4 style="text-align:left">
+                        How do we rapidly search chemistries and topologies to support polymer network informatics? (Aim II)
                     </h4>
                     <button class="accordion">
                         BigSMARTS Query Language and Substructure Search  <br /><br />
-                        <i style="color:red;">Utility:</i> Similar substructures = similar properties
+                        <i style="color:red;">Utility:</i> Graph traversal for polymer matches
                     </button>
                     <div class="panel">
-                        <p style="text-align:left;">
-                            Data-driven research, reaction design, and small-molecule property design are rapidly advancing due to the availability
-                            of open source toolkits like RDKit that enable search of deterministic small molecule graphs encoded in
-                            <a href="https://www.daylight.com/dayhtml/doc/theory/theory.smiles.html">SMILES</a> (Simplified
-                            Molecular-Input Line-Entry System) using the subgraph search syntax <a href="https://www.daylight.com/dayhtml/doc/theory/theory.smarts.html">SMARTS</a>
-                            (SMILES Arbitrary Target Specification). <a href="https://pubs.acs.org/doi/10.1021/acscentsci.9b00476">BigSMILES</a>
-                            has extended SMILES to represent polymers as ensembles of molecular graphs, motivating a parallel extension of SMARTS to the
-                            macromolecular domain. This project focuses on the significant expansion and rich complexity of searching polymers through the new
-                            search syntax BigSMARTS. BigSMARTS queries the elements of a molecular graph set containing one or more elements of a subgraph
-                            set and includes searches within the polymer’s building blocks (repeat units and end groups). BigSMARTS enables polymer reactions
-                            to be encoded and searched and coarse-graining searches to classify chain topologies (star polymers and block copolymers) that
-                            influence properties. With the development of new search tools based on RDKit to support BigSMARTS, polymer informatics will
-                            enjoy the benefits of search that have advanced small molecule design in the era of artificial intelligence.
-                        </p>
                         <p style="text-align:center;">
-                            <img src="images/BigSMARTS.JPG" style='height: 80%; width: 80%; object-fit: contain' />
+                            <img src="images/BigSMARTS.PNG" style='height: 80%; width: 80%; object-fit: contain' />
+                        </p>
+                        <p style="text-align:left;">
+                            Molecular functional group search is important for allowing chemists to rapidly discover information on the web and in databases. Search forms a key part of the daily routine for nearly all chemists, including virtual screening. This helps researchers to find knowledge, accelerates the design of experiments, and advances the study of structure-property relationships in chemistry.
+                        </p>
+                        <p style="text-align:left;">
+                            Small molecule search is well-established with the famous SMILES and SMARTS line notations and has transformed the field of cheminformatics.
+                            However, polymer search is substantially less developed because polymer structures are stochastic in nature and cannot be effectively searched with existing algorithms. Today, chemists can search for polymers on Google Scholar by their name, but the challenge is that common polymers like poly(styrene) can have many different names, and complex polymer topologies can be difficult for users to query according to their name. Moreover, search engines like SciFinder, while useful for searching monomers, offer limited support for searching advanced chemistries and complex polymer topologies.
+                        </p>
+                        <p style="text-align:left;">
+                            The BigSMILES line notation encodes the structure of polymers as compact strings and requires users only to know the repeat unit and end group structures rather than the name. This motivates the creation of a substructure search algorithm to search BigSMILES strings. To this end, this thesis introduces a query language for polymers that extends BigSMILES and SMARTS called BigSMARTS, a graph generation algorithm that converts these strings into molecular graphs inspired by state machines, and a substructure search algorithm inspired by the subgraph isomorphism problem that returns a match between BigSMARTS and BigSMILES strings.
                         </p>
                     </div>
 
@@ -204,17 +198,17 @@
                         <i style="color:red;">Utility:</i> Searching ensembles by string is faster than graph traversal!
                     </button>
                     <div class="panel">
+                        <p style="text-align:center;">
+                            <img src="images/statemachine.png" style='height: 80%; width: 80%; object-fit: contain' />
+                        </p>
                         <p style="text-align:left;">
-                            A small molecule has a single deterministic molecular graph representation, 
-                            but it can have many valid SMILES string representations, which makes useful 
-                            tasks like searching SMILES computationally expensive. 
+                            A small molecule has a single deterministic molecular graph representation,
+                            but it can have many valid SMILES string representations, which makes useful
+                            tasks like searching SMILES computationally expensive.
                             Many theories and algorithms have been proposed to canonicalize the SMILES language,
                             or determine a unique SMILES identifier for every molecule. These algorithms have been implemented in toolkits like RDKit.
-                            This aim introduces a canonicalization procedure for the BigSMILES language by mapping a BigSMILES string into a state machine graph, 
+                            This aim introduces a canonicalization procedure for the BigSMILES language by mapping a BigSMILES string into a state machine graph,
                             using existing algorithms in computer science literature to minimize or canonicalize the graph, and converting the graph back into a string.
-                        </p>
-                        <p style="text-align:center;">
-                            <img src="images/BigSMARTS.JPG" style='height: 80%; width: 80%; object-fit: contain' />
                         </p>
                     </div>
 </section>
